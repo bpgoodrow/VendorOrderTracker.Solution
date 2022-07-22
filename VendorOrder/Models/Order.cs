@@ -10,9 +10,9 @@ namespace VendorOrder.Models
 
     public Order(string description)
     {
-      description = description;
+      Description = description;
       _instances.Add(this);
-      Id - _instances.Count;
+      Id = _instances.Count;
     }
 
     public static List<Order> GetAll()

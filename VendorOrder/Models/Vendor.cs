@@ -14,7 +14,7 @@ namespace VendorOrder.Models
       Name = vendorName;
       _instances.Add(this);
       Id = _instances.Count;
-      Records = new List<Record>{};
+      Orders = new List<Order>{};
     }
 
     public static void ClearAll()
