@@ -22,7 +22,7 @@ namespace VendorOrder.Models
       _instances.Clear();
     }
 
-    public static List<Order> GetAll()
+    public static List<Vendor> GetAll()
     {
       return _instances;
     }

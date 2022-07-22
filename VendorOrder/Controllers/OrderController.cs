@@ -17,7 +17,7 @@ namespace VendorOrder.Controllers
     [HttpPost("/orders/delete")]
     public ActionResult DeleteAll()
     {
-      Record.ClearAll();
+      Order.ClearAll();
       return View();
     }
 

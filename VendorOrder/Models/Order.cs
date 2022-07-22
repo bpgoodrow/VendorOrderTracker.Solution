@@ -22,7 +22,7 @@ namespace VendorOrder.Models
 
     public static void ClearAll()
     {
-      return _instances;
+      _instances.Clear();
     }
 
     public static Order Find(int searchId)

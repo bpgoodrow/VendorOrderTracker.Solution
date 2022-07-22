@@ -44,7 +44,7 @@ namespace VendorOrder.Controllers
       Dictionary<string, object> model = new Dictionary<string, object>();
       Vendor foundVendor = Vendor.Find(vendorId);
       Order newOrder = new Order(orderDescription);
-      foundVendor.AddVendor(newOrder);
+      foundVendor.AddOrder(newOrder);
       List<Order> vendorOrders = foundVendor.Orders;
       model.Add("orders", vendorOrders);
       model.Add("vendor", foundVendor);
