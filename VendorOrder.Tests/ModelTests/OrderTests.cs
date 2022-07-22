@@ -28,5 +28,16 @@ namespace VendorOrder.Tests
       string result = newOrder.Description;
       Assert.AreEqual(description, result);
     }
+
+    [TestMethod]
+    public void SetDescription_SetDescription_String()
+    {
+      string description = "Order pecans.";
+      Order newOrder = new Order(description);
+      string updatedDescription = "Do the dishes";
+      newOrder.Description = updatedDescription;
+      string result = newOrder.Description;
+      Assert.AreEqual(updatedDescription, result);
+    }
   }
 }
