@@ -14,13 +14,6 @@ namespace VendorOrder.Controllers
       return View(vendor);
     }
 
-    [HttpPost("/orders/delete")]
-    public ActionResult DeleteAll()
-    {
-      Order.ClearAll();
-      return View();
-    }
-
     [HttpGet("/vendors/{vendorId}/order/{orderId}")]
     public ActionResult Show(int vendorId, int orderId)
     {
